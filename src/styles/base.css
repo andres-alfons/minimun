@@ -1,0 +1,18 @@
+/* Paleta y tipografía de minimum (compartidas por la página del cliente y el panel) */
+:root{
+  --fondo:#c8612b;       /* naranja quemado de la bola de disco */
+  --rosa:#e2559f;        /* rosado del logo */
+  --rosa-claro:#f8d3e1;
+  --naranja:#e0782f;     /* naranja de la tela brillante */
+  --claro:#fff1ea;       /* texto sobre el naranja */
+  --texto:#4b1f2a;       /* cacao para leer bien */
+  --texto-2:rgba(75,31,42,.7);
+  --linea:rgba(226,85,159,.22);
+  --vidrio:rgba(250,218,230,.8);
+  --display:"Gloock","Playfair Display",Georgia,serif;
+  --body:"Outfit",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{margin:0;background:var(--fondo);color:var(--texto);font-family:var(--body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.oculto{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
