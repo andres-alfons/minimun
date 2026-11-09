@@ -97,3 +97,4 @@ npm run dev
 
 - El botón de WhatsApp usa el usuario `@tina.s_11`. Los usuarios de WhatsApp son nuevos: pruébalo desde varios celulares antes de imprimir. Si falla en alguno, cambia `enlaceWhatsApp` en `src/lib/config.js` para usar `https://wa.me/57NUMERO?text=...`.
 - La meta (5 compras) se cambia en **Ajustes** sin tocar código.
+# minimun
