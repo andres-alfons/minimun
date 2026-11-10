@@ -3,7 +3,8 @@ export const IG_USUARIO = import.meta.env.VITE_IG_USUARIO || 'minimum.v'
 export const IG_URL = `https://www.instagram.com/${IG_USUARIO}/`
 
 // Dominio que va dentro de cada QR.
-export const SITE_URL = (import.meta.env.VITE_SITE_URL || window.location.origin).replace(/\/$/, '')
+// Se limpian espacios, "/" y "." sobrantes al final (un punto final rompe el QR en celulares).
+export const SITE_URL = (import.meta.env.VITE_SITE_URL || window.location.origin).trim().replace(/[\/.\s]+$/, '')
 
 export const urlCodigo = (codigo) => `${SITE_URL}/q/${codigo}`
 
